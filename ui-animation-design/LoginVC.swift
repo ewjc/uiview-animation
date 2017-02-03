@@ -8,26 +8,30 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setBottomBorder(textField: textField, borderColor: .black)
+        textField.setBottomBorder(borderColor: .black)
     }
     
     @IBOutlet weak var textField: UITextField!
 
-    func setBottomBorder(textField: UITextField, borderColor: UIColor) {
-        self.textField.borderStyle = .none
-        self.textField.backgroundColor = UIColor.clear
-        let width: CGFloat = 1.0
-        
-        let borderFrame = CGRect(x: 0.00, y: self.textField.frame.height - width, width: self.textField.frame.width, height: width)
-        let borderLine = UIView(frame: borderFrame)
-        borderLine.backgroundColor = borderColor
-        
-    }
-    
+}
 
+extension UITextField {
+    
+    func setBottomBorder(borderColor: UIColor) {
+        self.borderStyle = .none
+        self.backgroundColor = UIColor.clear
+        self.placeholder = "Enter text here"
+        let width: CGFloat = 2.0
+        
+        let borderFrame = CGRect(x: 0, y: self.frame.height - width, width: self.frame.width, height: width)
+        let borderLine = UIView(frame: borderFrame)
+        self.addSubview(borderLine)
+        
+        borderLine.backgroundColor = borderColor
+    }
 }
 
