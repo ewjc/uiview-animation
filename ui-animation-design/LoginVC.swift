@@ -8,14 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.setBottomBorder(borderColor: .black)
+        textField.delegate = self
     }
     
     @IBOutlet weak var textField: UITextField!
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: <#T##TimeInterval#>, animations: <#T##() -> Void#>)
+    }
 
 }
 
@@ -30,8 +35,9 @@ extension UITextField {
         let borderFrame = CGRect(x: 0, y: self.frame.height - width, width: self.frame.width, height: width)
         let borderLine = UIView(frame: borderFrame)
         self.addSubview(borderLine)
-        
         borderLine.backgroundColor = borderColor
     }
+    
+    
 }
 
