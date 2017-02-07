@@ -17,10 +17,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBOutlet weak var textField: UITextField!
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        UIView.animate(withDuration: <#T##TimeInterval#>, animations: <#T##() -> Void#>)
-    }
 
 }
 
@@ -37,7 +33,6 @@ extension UITextField {
         self.addSubview(borderLine)
         borderLine.backgroundColor = borderColor
     }
-    
     
 }
 
