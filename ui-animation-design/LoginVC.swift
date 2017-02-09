@@ -15,16 +15,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.setBottomBorder(borderColor: .black)
         textField.delegate = self
 
-        let originX = self.view.frame.width / 2
-        let originY = self.view.frame.height / 0.5
-        let loginFrame = CGRect(x: 0, y: 0 , width: 150 , height: 50)
+        let loginFrame = CGRect(x: 0, y: 0 , width: 280 , height: 50)
         let loginBoxView = UIView(frame: loginFrame)
         loginBoxView.backgroundColor = UIColor.clear
         loginBoxView.layer.borderColor = UIColor.black.cgColor
         loginBoxView.layer.borderWidth = 3
         self.view.addSubview(loginBoxView)
-        loginBoxView.center = CGPoint(x: originX, y: originY)
-    
+        loginBoxView.center = CGPoint(x: 205, y: 600)
+        loginBoxView.layer.cornerRadius = 25
+        
+        UIView.animate(withDuration: 0.7, delay: 1, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
+            loginBoxView.frame = loginBoxView.frame.insetBy(dx: 115, dy: 0)
+        }, completion: nil)
         
     }
     
