@@ -27,7 +27,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         UIView.animate(withDuration: 0.7, delay: 1, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
             loginBoxView.frame = loginBoxView.frame.insetBy(dx: 115, dy: 0)
         }, completion: nil)
-
     }
     
     @IBOutlet weak var textField: UITextField!
