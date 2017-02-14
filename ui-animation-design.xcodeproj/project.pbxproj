@@ -13,6 +13,7 @@
 		09BF1B8C1E440F4600F7E6AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BF1B8B1E440F4600F7E6AB /* Assets.xcassets */; };
 		09BF1B8F1E440F4600F7E6AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BF1B8D1E440F4600F7E6AB /* LaunchScreen.storyboard */; };
 		09BF1B971E4415DF00F7E6AB /* TextFieldHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF1B961E4415DF00F7E6AB /* TextFieldHelper.swift */; };
+		09FB01841E4CEDC200503C60 /* LoadingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FB01831E4CEDC200503C60 /* LoadingCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		09BF1B8E1E440F4600F7E6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09BF1B901E440F4600F7E6AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09BF1B961E4415DF00F7E6AB /* TextFieldHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldHelper.swift; sourceTree = "<group>"; };
+		09FB01831E4CEDC200503C60 /* LoadingCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				09BF1B8B1E440F4600F7E6AB /* Assets.xcassets */,
 				09BF1B8D1E440F4600F7E6AB /* LaunchScreen.storyboard */,
 				09BF1B901E440F4600F7E6AB /* Info.plist */,
+				09FB01831E4CEDC200503C60 /* LoadingCircleView.swift */,
 			);
 			path = "ui-animation-design";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09BF1B871E440F4600F7E6AB /* LoginVC.swift in Sources */,
+				09FB01841E4CEDC200503C60 /* LoadingCircleView.swift in Sources */,
 				09BF1B851E440F4600F7E6AB /* AppDelegate.swift in Sources */,
 				09BF1B971E4415DF00F7E6AB /* TextFieldHelper.swift in Sources */,
 			);
@@ -304,6 +308,7 @@
 				09BF1B951E440F4600F7E6AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
